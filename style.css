@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+
+
+#global {
+    display: grid;
+    grid-template-areas: 
+        "cabecera cabecera"
+        "lateral"
+        "principal"
+        "inferior"
+        "pie";
+    background: rgba(222, 47, 47, 0.84);
+    height: 100vh
+}
+header {
+    grid-area: cabecera;
+    background: crimson;
+}
+main {
+    grid-area: principal;
+    background: rgb(181, 139, 80);
+}
+section {
+    grid-area: inferior;
+    background: rgb(238, 255, 180);
+}
+aside {
+    grid-area: lateral;
+    background: rgb(203, 255, 203);
+}
+footer {
+    grid-area: pie;
+    background: rgb(255, 114, 228);
+}
